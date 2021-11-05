@@ -24,8 +24,9 @@ export default {
   position: absolute;
   width: 64px;
   height: 64px;
-  top: 47%;
-  left: 47%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   z-index: 99999;
 }
 .lds-facebook div {
