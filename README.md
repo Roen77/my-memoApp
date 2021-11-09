@@ -35,7 +35,7 @@
 ## 사용한 라이브러리
 
 || [axios] |[vue-router]|[vuetify]|[vuex]|
-|---|---|:---|:---|:---|
+|---|:---:|:---:|:---:|:---:|
 |버전|v0.21.4|v3.5.2|2.4.0|3.6.2|
 |이유|HTTP 클라이언트 라이브러리로 서버와의 통신을 위해 사용|vue 라우터|vue 전용 디자인 프레임워크|Vue.js를 위한 상태 관리 패턴 라이브러리 |
 
@@ -72,7 +72,7 @@
 
 <br>
 
-- **모든 라우터는 `로그인` 시, 이용 가능하도록 구현하였습니다.**
+- **모든 라우터는 로그인 시, 이용 가능하도록 구현하였습니다.**
 
 `router`
 ```js
@@ -1304,7 +1304,7 @@ unitCard = {
   </div>
 </template
 ```
-> 제대로 데이터를 불러오지 못하고 오류가 발생한 경우에는 `ErrorPage` 컴포넌트를 보여줍니다. <br>> `ErrorPage`에 관한 내용은 위의 [주요 공통 컴포넌트](#err)에서 정리하였습니다.</a>
+> 제대로 데이터를 불러오지 못하고 오류가 발생한 경우에는 `ErrorPage` 컴포넌트를 보여줍니다. <br> `ErrorPage`에 관한 내용은 위의 [주요 공통 컴포넌트](#err)에서 정리하였습니다.</a>
 
 
 ** ex) route의 params의 `id`값으로 해당 `id`값을 가지는 보드와 카드 데이터 정보를 호출할 때, 사용자가 잘못된 `id`값으로 호출했을 경우,에러 페이지를 보여줍니다.
@@ -2475,7 +2475,7 @@ methods: {
       }
     }
 ```
-`created`훅으로 인스턴스가 생성된 이후,편집 상태를 초기화시켜줍니다.
+`created`훅으로 인스턴스가 생성된 이후, 편집 상태를 초기화시켜줍니다.
 
 <br>
 
@@ -3914,7 +3914,7 @@ unitCard = {
 
 > 불러온 카드 리스트는 라이브러리인 <a href="https://github.com/Akryum/vue-virtual-scroller#readme">vue-virtual-scroller</a> 를 사용하였습니다.
 <br>
-(`vue-virtual-scroller`는 많은 양의 데이터를 스크롤할 시,목록에서 보이는 항목만 렌더링하여 보여줍니다.)
+(vue-virtual-scroller는 많은 양의 데이터를 스크롤할 시,목록에서 보이는 항목만 렌더링하여 보여줍니다. 검색 시, 조건에 맞는 모든 데이터를 불러오므로 해당 라이브러리를 사용하였습니다.)
 
 
 ```html
@@ -4153,14 +4153,14 @@ dataList = [{
 ### 1. 사용한 라이브러리
 
 ||<a href="http://expressjs.com/">express</a>|<a href="https://github.com/expressjs/morgan#readme">morgan</a>|<a href="https://github.com/remy/nodemon">nodemon</a>|<a href="https://github.com/expressjs/cors#readme">cors</a>|<a href="https://github.com/motdotla/dotenv#readme">dotenv</a>|
-|---|---|:---|:---:|:---:|:---:|
+|---|---|:---:|:---:|:---:|:---:|
 |버전|v4.17.1|v1.10.0|v2.0.7|v2.8.5|
 |_|node.js 프레임 워크|http 요청 로그 확인 미들웨어|서버 재시작하지 않아도 구동을 도와주는 라이브러리| <a href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing">CORS</a> 를 활성화하는 데 사용할 수 있는 Connect / Express 미들웨어|환경 변수를 .env파일에서 process.env로 불러올 수 있도록 하는 라이브러리|
 
 
 
 ||<a href="https://github.com/aws/aws-sdk-js">aws-sdk</a>|<a href="https://github.com/expressjs/multer#readme">multer</a>|<a href="https://github.com/badunk/multer-s3#readme">multer-s3</a>|
-|---|---|:---|:---:|
+|---|---|:---:|:---:|
 |버전|v2.905.0|v1.4.2|v2.9.0|
 |_|Node.js의 JavaScript용 AWS SDK를 지원해주는 라이브러리|파일 업로드를 위해 사용되는 multipart/form-data 를 다루기 위한 node.js 의 미들웨어|AWS S3를 위한 multer 라이브러리| 내용|
 > amazon s3에 이미지를 저장할 수 있도록 도와줍니다.
@@ -4175,7 +4175,7 @@ dataList = [{
 
 > `pg`는 postgresql에 연결할 수 있도록 도와줍니다.
 
->  sequdlize를 사용해 db를 작성하기 위해 설치합니다.
+>  sequdlize는 Node.js ORM으로 자바스크립트와 데이터베이스 릴레이션을 매핑해주는 도구로, sequdlize로 DB를 작성하였습니다.
 
 
 
@@ -4198,12 +4198,12 @@ dataList = [{
 
 
 
-## 배포
+# 배포
 - client : <a href="https://www.netlify.com/">netlify</a>에 배포
 - server : <a href="https://devcenter.heroku.com/">heroku</a>에 배포
 - db : heroku에서 제공하는 heroku-postgresql 사용
 
 
-## 테스트
+# 테스트
 - 테스트는 단위 테스트(가장 작은 실행 단위에 대해서 테스트를 실행하는 것)로 [Vue Test Utils](https://vue-test-utils.vuejs.org/)을 사용하였습니다.
 
