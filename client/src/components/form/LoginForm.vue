@@ -2,11 +2,11 @@
   <v-row>
     <v-col cols="12" md="8">
       <span class="ttt"></span>
-      <v-card-text class="test mt-12">
+      <v-card-text class=" mt-12">
         <h2 class="text-center display-1 indigo--text">로그인</h2>
         <h4 class="text-center mlt-4">로그인을 위해 작성해주세요</h4>
           <v-form ref="form" v-model="valid" @submit.prevent="login" >
-          <v-text-field  class="test" ref="input" label="이메일" v-model="email" name="email" prepend-icon="mdi-email" type="text" :counter="20"  color="indigo accent-2" :rules="emailRules">
+          <v-text-field  ref="input" label="이메일" v-model="email" name="email" prepend-icon="mdi-email" type="text" :counter="20"  color="indigo accent-2" :rules="emailRules">
           </v-text-field>
           <v-text-field label="비밀번호" v-model="password" name="password" prepend-icon="mdi-lock" :counter="20" type="password" color="indigo accent-2" :rules="passwordRules">
           </v-text-field>
